@@ -1,30 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><span style="font-weight:bold";>JavaScript</span></title>
+  <title>WEB1 - JavaScript</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 <body>
-<h1><a href="ind.html">WEB</h1></a>
-<ol>
-	<a href="1.html"><li>HTML이란 무엇인가?</li></a>
-	<a href="2.html"><li>CSS</li></a>
-	<a href="3.html"><li><span style="font-weight:bold";>JavaScript</span></li></a>
-</ol>
+  <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white'; 
+  ">
+  <input type="button" value='day' onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+  ">
 
-<br>
-<h2><span style="font-weight:bold";>JavaScript</span></h2>
-<span style="font-weight:bold";>JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/),[8] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[9] <span style="font-weight:bold";>JavaScript</span> is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+  <input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night'){
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white'; 
+      document.querySelector('#night_day').value = 'day'
+      } else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#night_day').value = 'night'
+        }
+   ">
 
-Alongside HTML and CSS, <span style="font-weight:bold";>JavaScript</span> is one of the core technologies of the World Wide Web.[10] Over 97% of websites use it client-side for web page behavior,[11] often incorporating third-party libraries.[12] All major web browsers have a dedicated <span style="font-weight:bold";>JavaScript</span> engine to execute the code on the user's device.
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2>JavaScript</h2>
+  <p>
+    JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
+  </p>
 </body>
 </html>
-
-
-
-
-
-
-
-
