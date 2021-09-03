@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h2>1.매개변수가 없는 함수</h2>
+	<ul>
+	 <script type="text/javascript">
+		function two(){
+			document.write('<li>2-1</li>');
+			document.write('<li>2-2</li>');
+				}
+		two();
+
+	 </script>
+	</ul>
+
+	<h2>2.매개변수가 있는 함수</h2>
+	<script type="text/javascript">
+		function onePlusOne(){
+			document.write(1+1+'<br>');
+		}
+		onePlusOne(); 
+		function sum(left, right){
+			document.write(left+right+'<br>');
+		}
+		sum(2,3);
+		sum(3,4);
+	</script>
+
+	<h2>3.Return 사용</h2>
+	<h3>-return을 쓸 경우 좀 더 디테일한 표현을 자유롭게 할 수 있다.</h3>
+	<script type="text/javascript">
+		function sum2(left, right){
+			return left+right;}
+		document.write(sum2(2,3)+'<br>');
+		document.write('<div style ="color:green;">'+sum2(2,3));
+		document.write('<div style ="font-size:2rem;">'+sum2(2,3)+'</div><br>');	 		
+	</script>
+
+</body>
+</html>
